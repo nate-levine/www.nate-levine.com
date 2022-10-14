@@ -1,1 +1,1 @@
-Nate Levine's personal website
+This website is intended as a portfolio and personal archive.
