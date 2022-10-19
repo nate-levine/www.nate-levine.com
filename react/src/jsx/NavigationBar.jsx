@@ -9,9 +9,9 @@ let NavigationBar = () => {
                 <p class='mark'>nate-levine.com</p>
             </div>
             <ul>
-                <li><Link to='/'>About</Link></li>
-                <li><Link to='/portfolio'>Portfolio</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
+                <li><Link  class='navlink' to='/'>About</Link></li>
+                <li><Link  class='navlink' to='/portfolio'>Portfolio</Link></li>
+                <li><Link  class='navlink' to='/contact'>Contact</Link></li>
             </ul>
         </div>
     );

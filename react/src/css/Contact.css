@@ -1,0 +1,124 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+body {
+    font-family: 'Gotham XLight', sans-serif;
+}
+
+.email-subtext {
+    animation: pop-out-email ease;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+
+    font-size: 0%;
+    margin-top: 15%;
+    opacity: 0;
+    text-align: center;
+}
+
+@keyframes pop-out-email {
+    0% {
+        font-size: 0%;
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        font-size: 50%;
+        opacity: 1;
+    }
+}
+
+.email {
+    animation: fade-in-email ease 3s;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    margin-bottom: 2%;
+    text-align: center;
+
+    
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, rgba(50, 54, 67, 0), rgba(50, 54, 67, 0),  rgba(50, 54, 67, 1), rgba(50, 54, 67, 1));
+    background-position: 90% 100%;    
+	background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.email-link {
+    color: #ffffff;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+@keyframes fade-in-email {
+    0% {
+        background-position: 90% 100%;
+    }
+    100% {
+        background-position: 0% 10%;
+    }
+}
+
+.linkedin {
+    animation: fade-in-linkedin ease;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    margin-top: 0;
+    text-align: center;
+
+    
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, rgba(50, 54, 67, 0), rgba(50, 54, 67, 0),  rgba(50, 54, 67, 1), rgba(50, 54, 67, 1));  
+    background-position: 90% 100%; 
+	background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.linkedin-subtext {
+    animation: pop-out-linkedin ease;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+    font-size: 0%;
+    opacity: 0;
+    text-align: center;
+}
+
+@keyframes pop-out-linkedin {
+    0% {
+        font-size: 0%;
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        font-size: 50%;
+        opacity: 1;
+    }
+}
+
+.linkedin-link {
+    color: #ffffff;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+@keyframes fade-in-linkedin {
+    0% {
+        background-position: 90% 100%;
+    }
+    100% {
+        background-position: 0% 10%;
+    }
+}
