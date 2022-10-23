@@ -1,14 +1,24 @@
 import React from 'react';
 import NavigationBar from './NavigationBar';
+import '../css/About.css'
 
 let About = () => {
     return(
         <div>
             <NavigationBar />
             <div>
-                <h1>WHAT'S UP</h1>
-                <p>This site is under construction</p>
-                <p>Check back in a week...</p>
+                <div style={{ color: '#ff0000' }}>
+                    <h1>NOTE: THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION</h1>
+                    <h1>If things look unfinished, that's because they are.</h1>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <p>Hey! I'm</p>
+                <h1>Nate Levine</h1>
+                <p>a current sophomore at Worcester Polytechinic Institute</p>
+                <p>pursuing a B.S. in mechanical engineering</p>
             </div>
         </div>
     );
