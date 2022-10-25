@@ -13,17 +13,17 @@ let Portfolio = () => {
                 </section>
                 <section>
                     <p>Easy Paddle</p>
-                    <p class='subtext'>A pressure sensitive paddle manufactured using my high school's Makerspace</p>
+                    <p class='subtext'>A pressure sensitive ping pong paddle manufactured using my high school's Makerspace</p>
                     <img class='image' src={placeholder_image} alt='placeholder_image' />
                 </section>
                 <section>
                     <p>Daniels Doorjam</p>
-                    <p class='subtext'>A 3D printed doorstop designed by my roomate and I to solve a common problem</p>
+                    <p class='subtext'>A 3D printed doorstop designed by my roomate and I to solve a common problem in our dorm</p>
                     <img class='image' src={placeholder_image} alt='placeholder_image' />
                 </section>
                 <section>
                     <p>Key and Deadbolt Assembly</p>
-                    <p class='subtext'>A key a deadboly mechanism I designed for a CAD course final project</p>
+                    <p class='subtext'>A key a deadbolt mechanism I designed for a CAD course final project</p>
                     <img class='image' src={placeholder_image} alt='placeholder_image' />
                 </section>
             </div>
