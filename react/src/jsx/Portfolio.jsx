@@ -12,15 +12,18 @@ let Portfolio = () => {
                     <p>Scroll To the Right</p>
                 </section>
                 <section>
-                    <p>Image 1</p>
+                    <p>Easy Paddle</p>
+                    <p class='subtext'>A pressure sensitive paddle manufactured using my high school's Makerspace</p>
                     <img class='image' src={placeholder_image} alt='placeholder_image' />
                 </section>
                 <section>
-                    <p>Image 2</p>
+                    <p>Daniels Doorjam</p>
+                    <p class='subtext'>A 3D printed doorstop designed by my roomate and I to solve a common problem</p>
                     <img class='image' src={placeholder_image} alt='placeholder_image' />
                 </section>
                 <section>
-                    <p>Image 3</p>
+                    <p>Key and Deadbolt Assembly</p>
+                    <p class='subtext'>A key a deadboly mechanism I designed for a CAD course final project</p>
                     <img class='image' src={placeholder_image} alt='placeholder_image' />
                 </section>
             </div>

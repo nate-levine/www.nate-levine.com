@@ -15,9 +15,8 @@ let About = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <p>Hey! I'm</p>
                 <h1>Nate Levine</h1>
-                <p>a current sophomore at Worcester Polytechinic Institute</p>
+                <p>Current sophomore at Worcester Polytechinic Institute</p>
                 <p>pursuing a B.S. in mechanical engineering</p>
             </div>
         </div>

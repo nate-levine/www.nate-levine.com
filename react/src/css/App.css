@@ -1,22 +1,10 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
 body {
-    animation: gradient ease 10s infinite alternate;
-
+    background-color: #323643;
+    color: #ffffff;
     font-family: 'Gotham', sans-serif;
     font-size: 200%;
-    color: #ffffff;
-    background-image: linear-gradient(to right, #323643, #3b3243, #6e4c8e);
-    background-size: 200%, 200%;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0 25%;
-    }
-    100% {
-        background-position: 50% 100%;
-    }
 }
 
 /* GOTHAM FONT OPTIONS
