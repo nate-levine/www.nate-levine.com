@@ -1,0 +1,87 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+body {
+    font-family: 'Gotham Light', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    ul {
+        background-color: #dddddd;
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+
+        li {
+            float: left;
+
+            a {
+                color: #000000;
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+            }
+        }
+
+        li:hover:not(.supersecret) {
+            background-color: #ffffff;
+        }
+
+        .supersecret {   
+            float: right;
+            margin: 0;
+        }
+    }
+}
+
+.section {
+    display: grid;
+    height: 75vh;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    p {
+        justify: left;
+        padding: 0 25px;
+    }
+
+    img {
+        width: 40vw;    
+    }
+}
+
+.typing  {
+
+    h1 {
+        display: inline;
+        font-size: 15vw;
+    }
+}
+
+.footer {
+    background-color: #dddddd;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+
+    .blocks {        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 50px;
+
+        p {
+            font-weight: bold;
+        }
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+}

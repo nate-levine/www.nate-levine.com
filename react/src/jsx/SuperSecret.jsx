@@ -3,14 +3,14 @@ import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import Typing from './Typing.jsx';
 
-let Contact = () => {
+let SuperSecret = () => {
     return(
         <div>
             <Header />
-            <Typing text='Contact.' />
+            <Typing text='Super Secret.' />
             <Footer />
         </div>
     );
 }
 
-export default Contact;
+export default SuperSecret;
