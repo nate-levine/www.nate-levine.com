@@ -42,7 +42,7 @@ let Homepage = () => {
                 <div className='content'>
                     <Header />
                     <Popbox width='90vw' height='20vh' left='0' top='35vh' color={ color1 } duration='2s' delay='1s' title='Sophomore at Worcester Polytechnic Institute studying Mechanical Engineering' />
-                    <Popbox width='40vw' height='25vh' left='55vw' top='60vh' color={ color3 } duration='1s' delay='2s' title='Visit this website on a computer for the best viewing experience.' />
+                    <Popbox width='40vw' height='25vh' left='55vw' top='60vh' color={ color3 } duration='1s' delay='2s' title='Visit this website on a computer for the best viewing experiences' />
                     <Typing fontSize='15vw' text='Nate Levine.' />
                     <Section height='75vh' orientation='left' backgroundColor='transparent' text="Hey, I'm glad you decided to visit my personal website. It's under construction currently, but it should be ready within the next week. In the meantime, feel free to explore to your heart's content." />
                     <Section height='75vh' orientation='right' backgroundColor='#f0e8de' text="This is placeholder text. I'm going to write something down here, probably something important. Unfortunately, I don't know what's important enough to write down here. So right now this is just here to take up space." image={ placeholderPNG } />
