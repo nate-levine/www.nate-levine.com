@@ -6,33 +6,30 @@ let Footer = () => {
             <div className='blocks'>
                 <div></div>
                 <div>
-                    <p>Built With</p>
+                    <p>Hosted With</p>
                     <ul>
-                        <li>Apples</li>
-                        <li>Bananas</li>
-                        <li>Carrots</li>
+                        <li>GitHub</li>
+                        <li>Netlify</li>
                     </ul>
                 </div>
                 <div>
-                    <p>Built With</p>
+                    <p>Libraries Used</p>
                     <ul>
-                        <li>Apples</li>
-                        <li>Bananas</li>
-                        <li>Carrots</li>
+                        <li>React.js</li>
+                        <li>iro.js</li>
+                        <li>js-cookie</li>
                     </ul>
                 </div>
                 <div>
-                    <p>Built With</p>
+                    <p>Links</p>
                     <ul>
-                        <li>Apples</li>
-                        <li>Bananas</li>
-                        <li>Carrots</li>
+                        <li>Resume</li>
                     </ul>
-                </div>
+                </div>  
                 <div></div>
             </div>
             <div>
-                <p>©2023 nate-levine.com. All rights reserved.</p>
+                <p>© 2023 nate-levine.com. All rights reserved.</p>
             </div>
         </div>
     );

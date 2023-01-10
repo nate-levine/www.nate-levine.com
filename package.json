@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/nate-levine/www.nate-levine.com/issues"
   },
-  "homepage": "https://github.com/nate-levine/www.nate-levine.com#readme"
+  "homepage": "https://github.com/nate-levine/www.nate-levine.com#readme",
+  "dependencies": {
+    "@jaames/iro": "^5.5.2",
+    "js-cookie": "^3.0.1"
+  }
 }

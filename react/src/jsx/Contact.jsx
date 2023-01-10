@@ -7,7 +7,7 @@ let Contact = () => {
     return(
         <div>
             <Header />
-            <Typing text='Contact.' />
+            <Typing fontSize='15vw' text='Contact.' />
             <Footer />
         </div>
     );

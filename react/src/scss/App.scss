@@ -4,11 +4,12 @@ body {
     font-family: 'Gotham Light', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fbf2ef;
 }
 
 .header {
     ul {
-        background-color: #dddddd;
+        background-color: #e9e0d6;
         list-style-type: none;
         margin: 0;
         overflow: hidden;
@@ -20,35 +21,98 @@ body {
             a {
                 color: #000000;
                 display: block;
-                padding: 20px;
+                font-size: 1vw;
+                padding: 2.35vh;
+                text-decoration: none;
+            }
+
+            button {
+                font-family: 'Gotham Light', sans-serif;
+                border: none;
+                background-color: #e9e0d6;
+                color: #000000;
+                cursor: pointer;
+                display: block;
+                font-size: 1vw;
+                padding: 2.35vh;
                 text-decoration: none;
             }
         }
 
-        li:hover:not(.supersecret) {
-            background-color: #ffffff;
+        li:hover:not(.superSecretButton) {
+            background-color: #fbf2ef;
+
+            button {
+                background-color: #fbf2ef;
+            }
         }
 
-        .supersecret {   
+        .superSecretButton {  
             float: right;
             margin: 0;
+
+            a {
+                cursor: help;
+            }
         }
     }
 }
 
 .section {
     display: grid;
-    height: 75vh;
     grid-template-columns: 1fr 1fr;
     place-items: center;
 
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
     p {
-        justify: left;
         padding: 0 25px;
+        text-indent: 4em;
     }
 
     img {
-        width: 40vw;    
+        box-shadow: 3px 3px #aaaaaa; 
+        height: 60vh; 
+    }
+
+    img:hover {
+        animation: imageHover 0.4s;
+        height: 62vh;
+    }
+
+    img:not(:hover) {
+        animation: imageHoverOff 0.5s;
+    }
+
+    @keyframes imageHover {
+        0% {
+            height: 60vh;  
+        }
+        50% {
+            height: 63vh;  
+        }
+        100% {
+            height: 62vh;  
+        }
+    }
+    @keyframes imageHoverOff {
+        0% {
+            height: 62vh;  
+        }
+        100% {
+            height: 60vh;  
+        }
     }
 }
 
@@ -56,12 +120,11 @@ body {
 
     h1 {
         display: inline;
-        font-size: 15vw;
     }
 }
 
 .footer {
-    background-color: #dddddd;
+    background-color: #e9e0d6;
     margin: 0;
     overflow: hidden;
     padding: 0;
@@ -84,4 +147,75 @@ body {
             }
         }
     }
+}
+
+.homepage {
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.portfolio {
+
+}
+
+.contact {
+    
+}
+
+.supersecret {
+
+    .pickers {
+        left: 32.5vw;
+        top: 85vh;
+        position: absolute;
+        
+        div {
+            margin: 0 12px;
+            float:left;
+        }
+    }
+}
+
+.square {
+    transform: scale(0);
+
+    .text {
+        color: 'transparent';
+        padding: 50px;
+    }
+}
+  
+.square-animation {
+    animation: wipe-enter ease forwards;
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, 0.025);
+	}
+    25% {
+		transform: scale(1, 0.025);
+    }
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+
+.text-animation {
+    animation: fade-in 3s ease forwards;
+}
+
+@keyframes fade-in {
+	0% {
+		color: transparent;
+	}
+    90% {
+		color: transparent;
+	}
+	100% {
+		color: #000000;
+	}
 }
