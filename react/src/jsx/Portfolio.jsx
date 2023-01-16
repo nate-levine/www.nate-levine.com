@@ -34,10 +34,10 @@ let Portfolio = () => {
                     text='This SolidWorks assembly was my final course evaluation for a Computer Aided Design course. In a month I designed parts, made an assembly, and created the appropriate drawings for everything including an exploded view. Click below find a download link for the entire project folder.' 
                 link='Download >>>' url='https://drive.google.com/drive/folders/1F1zmKdnT-sINFr2-r6idrlq-SO6UBFSw?usp=share_link' image={ assemblyBOM } />
                 <Section height='75vh' orientation='right' backgroundColor='transparent' title='Daniels Door Jam' subtitle='3D Printed Doorstop'
-                    text='This project was though up by another student and I to solve a common problem students were having in our dorm hall. We deisgned, manufactured, prototyped, tested, iterated on, and gave away copies of this Door Stop to people who wanted one. Click below see a video of the Door Jam in action.' 
+                    text='This project was thought up by another student and I to solve a common problem students were having in our dorm hall. We designed, manufactured, prototyped, tested, iterated on, and gave away copies of this Door Stop to people who wanted one. Click below see a video of the Door Jam in action.' 
                 link='View More >>>' url='https://youtu.be/kev0uBcHKio'  image={ doorStopPoster } />
                 <Section height='75vh' orientation='left' backgroundColor='#f0e8de' title='Easy Paddle' subtitle='Makerspace Project'
-                    text='This project was my first big manufacturing project. Utilizing my high school Makerspace, I designed and built a ping pong paddle with a pressure activated speaker from scratch. This project was valuble, in that it me to learn how to use various hand tools, manufacturing machines, and softwares.' 
+                    text='This project was my first big manufacturing project. Utilizing my high school makerspace, I designed and built a ping pong paddle with a pressure activated speaker from scratch. This project was valuble, in that it allowed me to learn how to use various hand tools, manufacturing machines, and softwares.' 
                 image={ easyPaddle } />
             </div>
         </div>
