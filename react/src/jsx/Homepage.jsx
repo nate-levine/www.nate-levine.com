@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import About from './About.jsx'
 import Portfolio from './Portfolio.jsx'
 import Contact from './Contact.jsx'
 
 let Homepage = () => {
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        // true for mobile device
-        alert("It seems that you're viewing this website on a mobile device. Check out this website on a computer for a better viewing experience.");
-    }
+    useEffect(() => {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            setTimeout(() => {
+                alert("It seems that you're viewing this website on a mobile device. Check out this website on a computer for a better viewing experience.");
+            }, 1000);
+        }
+    }, []);
 
     return(
         <div className='homepage'>
