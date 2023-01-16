@@ -1,7 +1,5 @@
 import React from 'react';
 
-import resume from '../media/Nate A Levine Resume January 2023.pdf'
-
 let Footer = () => {
     return(
         <div className='footer'>
@@ -26,7 +24,7 @@ let Footer = () => {
                     <p>Links & Downloads</p>
                     <ul>
                         <li><a href='https://www.linkedin.com/in/nate-levine-/'>LinkedIn</a></li>
-                        <li><a href={ resume } download>Resume</a></li>
+                        <li><a href='https://drive.google.com/file/d/1Si3qTOH6mabLxFM67JGLbyOHDfIFjb-Q/view?usp=share_link'>Resume</a></li>
                     </ul>
                 </div>  
                 <div></div>

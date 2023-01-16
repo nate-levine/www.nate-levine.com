@@ -7,19 +7,17 @@ let Section = (props) => {
     {
         return(
             <div className='section' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
-                <Link to='/'>
+                <a href={ props.url }>
                     <div>
                         <h1>{props.title}</h1>
                         <h3>{props.subtitle}</h3>
                         <p>{props.text}</p>
-                        <h3 className='link'>
-                            <Link to='/'>{props.link}</Link>
-                        </h3>
+                        <h3 className='link'>{props.link}</h3>
                     </div>
-                </Link>
-                <Link to='/'>
+                </a>
+                <a href={ props.url }>
                     <img style={{ backgroundColor: props.backgroundColor }} src={ props.image } />
-                </Link>
+                </a>
             </div>
         );
     }
@@ -27,19 +25,17 @@ let Section = (props) => {
     {
         return(
             <div className='section' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
-                <Link to='/'>
+                <a href={ props.url }>
                     <img src={ props.image } />
-                </Link>
-                <Link to='/'>
+                </a>
+                <a href={ props.url }>
                     <div>
                         <h1>{props.title}</h1>
                         <h3>{props.subtitle}</h3>
                         <p>{props.text}</p>
-                        <h3 className='link'>
-                            <Link to='/'>{props.link}</Link>
-                        </h3>
+                        <h3 className='link'>{props.link}</h3>
                     </div>
-                </Link>
+                </a>
             </div>
         );
     }
