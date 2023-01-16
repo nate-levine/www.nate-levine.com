@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
+import React from 'react';
 import Section from './Section.jsx';
 import Typing from './Typing.jsx';
 
@@ -24,24 +22,23 @@ let Portfolio = () => {
     return(
         <div className='portfolio'>
             <div className='curves'>
-                <CurveV height='30vh' left='80vw' top='56.8px' thickness='25px' colors={[color1, color2, color3]} />
-                <CurveBR width='300px' height='25vh' left='calc(80vw - 225px)' top='110.25vh' thickness='25px' radius='50px' colors={[color1, color2, color3]} />
-                <CurveBL width='100px' height='12.5vh' left='calc(80vw - 325.2px)' top='122.75vh' thickness='25px' radius='50px' colors={[color1, color2, color3]} />
-                <CurveTR width='calc(80vw - 250.5px)' height='12.5vh' left='0' top='110.25vh' thickness='25px' radius='50px' colors={[color3, color2, color1]} />
+                <CurveV height='28.5vh' left='75vw' top='170.2vh' thickness='2vw' colors={[color1, color2, color3]} />
+                <CurveBR width='15vw' height='25vh' left='66vw' top='273.7vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
+                <CurveBL width='12vw' height='12.5vh' left='54vw' top='286.2vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
+                <CurveTR width='60vw' height='12.5vh' left='0vw' top='273.7vh' thickness='2vw' radius='4vw' colors={[color3, color2, color1]} />
             </div>
             <div className='content'>
-                <Header />
-                <Typing fontSize='15vw' text='Portfolio.' />
-                <Section orientation='left' backgroundColor='#f0e8de' title='Key and Deadbolt Assembly' subtitle='SolidWorks Course Project'
-                    text='This SolidWorks assembly was my final course evaluation for an introductory Computer Aided Design course. Over the course of a month I designed parts, assembled them together, and created the appropriate drawings for them including an exploded view. Click to find a download link for the entire project folder.' 
-                image={ assemblyBOM } />
-                <Section orientation='right' backgroundColor='transparent' title='Daniels Door Jam' subtitle='3D Printed Doorstop'
-                    text='This project was though up by another student and I to solve a common problem student were having in our dorm hall. We deisgned, manufactured, prototyped, tested, iterated, and gave away copies of this Door Stop to people who wanted one. Click to see a video of the Door Jam in action.' 
-                image={ doorStopPoster } />
-                <Section orientation='left' backgroundColor='#f0e8de' title='Easy Paddle' subtitle='Makerspace Project'
-                    text='This project is a gag gift and my first big manufacturing project. Utilizing my High School Makerspace, I designed and built a ping pong paddle completely from scratch. This allowed me to learn how to use various hand tools, manufacturing equipment, machinery, and softwares.' 
+                <Section height='10vh' orientation='left' backgroundColor='#e9e0d6' />
+                <Typing fontSize='15vw' height='28.5vh' text='Portfolio.' />
+                <Section height='75vh' orientation='left' backgroundColor='#f0e8de' title='Key and Deadbolt Assembly' subtitle='SolidWorks Course Project'
+                    text='This SolidWorks assembly was my final course evaluation for a Computer Aided Design course. In a month I designed parts, made an assembly, and created the appropriate drawings for everything including an exploded view. Click below find a download link for the entire project folder.' 
+                link='Download >>>' image={ assemblyBOM } />
+                <Section height='75vh' orientation='right' backgroundColor='transparent' title='Daniels Door Jam' subtitle='3D Printed Doorstop'
+                    text='This project was though up by another student and I to solve a common problem students were having in our dorm hall. We deisgned, manufactured, prototyped, tested, iterated on, and gave away copies of this Door Stop to people who wanted one. Click below see a video of the Door Jam in action.' 
+                link='View More >>>' image={ doorStopPoster } />
+                <Section height='75vh' orientation='left' backgroundColor='#f0e8de' title='Easy Paddle' subtitle='Makerspace Project'
+                    text='This project was my first big manufacturing project. Utilizing my high school Makerspace, I designed and built a ping pong paddle with a pressure activated speaker from scratch. This project was valuble, in that it me to learn how to use various hand tools, manufacturing machines, and softwares.' 
                 image={ easyPaddle } />
-                <Footer />
             </div>
         </div>
     );

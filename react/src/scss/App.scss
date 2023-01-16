@@ -8,6 +8,8 @@ body {
 }
 
 .header {
+    height: 6.7vh;
+
     ul {
         background-color: #e9e0d6;
         list-style-type: none;
@@ -21,7 +23,7 @@ body {
             a {
                 color: #000000;
                 display: block;
-                font-size: 1vw;
+                font-size: 1.1vw;
                 padding: 2.35vh;
                 text-decoration: none;
             }
@@ -33,7 +35,7 @@ body {
                 color: #000000;
                 cursor: pointer;
                 display: block;
-                font-size: 1vw;
+                font-size: 1.1vw;
                 padding: 2.35vh;
                 text-decoration: none;
             }
@@ -68,6 +70,18 @@ body {
         text-decoration: none;
     }
 
+    a:hover {
+        color: #000000;
+    }
+
+    .link {
+        transition: 0.25s;
+    }
+
+    .link:hover {
+        transform: scale(1.05);
+    }
+
     h1 {
         text-align: center;
     }
@@ -82,13 +96,15 @@ body {
     }
 
     img {
-        box-shadow: 3px 3px #aaaaaa; 
-        height: 60vh; 
+        height: 35vw;
+        box-shadow: 0.2vw 0.2vw #aaaaaa;
+        transform: translate(0vw, 0vw);
     }
 
     img:hover {
-        animation: imageHover 0.4s;
-        height: 62vh;
+        animation: imageHover 0.25s;
+        box-shadow: 0.4vw 0.4vw #aaaaaa;
+        transform: translate(-0.2vw, -0.2vw);
     }
 
     img:not(:hover) {
@@ -97,33 +113,28 @@ body {
 
     @keyframes imageHover {
         0% {
-            height: 60vh;  
-        }
-        50% {
-            height: 63vh;  
+            box-shadow: 0.2vw 0.2vw #aaaaaa; 
+            transform: translate(0vw, 0vw);
         }
         100% {
-            height: 62vh;  
+            box-shadow: 0.4vw 0.4vw #aaaaaa;
+            transform: translate(-0.2vw, -0.2vw);
         }
     }
     @keyframes imageHoverOff {
         0% {
-            height: 62vh;  
+            box-shadow: 0.4vw 0.4vw #aaaaaa;
+            transform: translate(-0.2vw, -0.2vw);
         }
         100% {
-            height: 60vh;  
+            box-shadow: 0.2vw 0.2vw #aaaaaa; 
+            transform: translate(0vw, 0vw);
         }
-    }
-}
-
-.typing  {
-
-    h1 {
-        display: inline;
     }
 }
 
 .footer {
+    height: 45vh;
     background-color: #e9e0d6;
     margin: 0;
     overflow: hidden;
@@ -133,7 +144,7 @@ body {
     .blocks {        
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        padding: 50px;
+        padding: 5vh 0 20vh 0;
 
         p {
             font-weight: bold;
@@ -147,32 +158,45 @@ body {
             }
         }
     }
-}
+    
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
 
-.homepage {
-
-    h1 {
-        text-align: center;
+    a:hover {
+        text-decoration: underline;
     }
 }
 
-.portfolio {
+.about {
+    
+    h1 {
+        text-align: center;
+    }
 
+    img {
+        filter: brightness(0);
+    }
 }
 
 .contact {
-    
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
 }
 
 .supersecret {
 
     .pickers {
         left: 32.5vw;
-        top: 85vh;
+        top: 80vh;
         position: absolute;
         
         div {
-            margin: 0 12px;
+            margin: 0 0.5vw;
             float:left;
         }
     }
@@ -183,7 +207,6 @@ body {
 
     .text {
         color: 'transparent';
-        padding: 50px;
     }
 }
   
@@ -205,7 +228,7 @@ body {
 
 
 .text-animation {
-    animation: fade-in 3s ease forwards;
+    animation: fade-in 1.5s ease forwards;
 }
 
 @keyframes fade-in {

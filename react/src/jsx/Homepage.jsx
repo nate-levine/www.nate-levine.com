@@ -1,83 +1,26 @@
 import React from 'react';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import Typing from './Typing.jsx';
-import Section from './Section.jsx';
-import Popbox from './Popbox.jsx';
-
-import CurveBL from './Curves/CurveBL.jsx';
-import CurveBR from './Curves/CurveBR.jsx';
-import CurveTL from './Curves/CurveTL.jsx';
-import CurveTR from './Curves/CurveTR.jsx';
-import CurveH from './Curves/CurveH.jsx';
-import CurveV from './Curves/CurveV.jsx';
-
-import Cookies from '../../../node_modules/js-cookie'
-
-import placeholderPNG from '../media/16-9_placeholder.png';
-import assemblyBOM from '../media/Assembly_BOM_PNG.png';
-import doorStopPoster from '../media/Doorstop_Poster_PNG.png';
-import easyPaddle from '../media/EasyPaddle.png';
+import About from './About.jsx'
+import Portfolio from './Portfolio.jsx'
+import Contact from './Contact.jsx'
 
 let Homepage = () => {
 
-    const color1 = Cookies.get('color1');
-    const color2 = Cookies.get('color2');
-    const color3 = Cookies.get('color3');
+    window.mobileCheck = function() {
+        let check = false;
+        (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+        alert("It seems that you're viewing this website on a mobile device. Check out this website on a computer for a better viewing experience.");
+    };
 
     return(
-        <div>
-            <div className='homepage'>
-                <div className='curves'>
-                    <CurveBR width='303.5px' height='12.5vh' left='calc(0)' top='100vh' thickness='25px' radius='50px' colors={[color3, color2, color1]} />
-                    <CurveTL width='150px' height='12.5vh' left='calc(80vw - 1000px)' top='87.5vh' thickness='25px' radius='50px' colors={[color1, color2, color3]} />
-                    <CurveTR width='225.2px' height='25vh' left='calc(80vw - 850.25px)' top='87.5vh' thickness='25px' radius='50px' colors={[color1, color2, color3]} />
-                    <CurveBL width='449px' height='125px' left='calc(80vw - 700px)' top='187.5vh' thickness='25px' radius='50px' colors={[color3, color2, color1]} />
-                    <CurveTR width='250px' height='53vh' left='calc(80vw - 250px)' top='187.5vh' thickness='25px' radius='50px' colors={[color3, color2, color1]} />
-                    <CurveBR width='250px' height='200px' left='calc(80vw - 250px)' top='237.5vh' thickness='25px' radius='50px' colors={[color3, color2, color1]} />
-                    <CurveBL width='125px' height='200px' left='calc(80vw - 365px)' top='237.5vh' thickness='25px' radius='50px' colors={[color3, color2, color1]} />
-                    <CurveTL width='289.5px' height='200px' left='calc(80vw - 365px)' top='217.5vh' thickness='25px' radius='50px' colors={[color3, color2, color1]} />
-                    <CurveH width='19.05%' left='80.95%' top='217.5vh' thickness='25px' colors={[color1, color2, color3]} />
-                </div>
-                <div className='content'>
-                    <Header />
-                    <Popbox width='90vw' height='20vh' left='0' top='35vh' color={ color1 } duration='2s' delay='1s' title='Sophomore at Worcester Polytechnic Institute studying Mechanical Engineering' />
-                    <Popbox width='40vw' height='25vh' left='55vw' top='60vh' color={ color3 } duration='1s' delay='2s' title='Visit this website on a computer for the best viewing experiences' />
-                    <Typing fontSize='15vw' text='Nate Levine.' />
-                    <Section height='75vh' orientation='left' backgroundColor='transparent' text="Hey, I'm glad you decided to visit my personal website. It's under construction currently, but it should be ready within the next week. In the meantime, feel free to explore to your heart's content." />
-                    <Section height='75vh' orientation='right' backgroundColor='#f0e8de' text="This is placeholder text. I'm going to write something down here, probably something important. Unfortunately, I don't know what's important enough to write down here. So right now this is just here to take up space." image={ placeholderPNG } />
-                    <Section height='75vh' orientation='left' backgroundColor='transparent' text="Did you know this text is the only thing keeping the width of the website from not going wacko? Yea, CSS is a real pain. Did you find the secret on this website yet? If not, keep looking" />
-                    <Section height='25vh' orientation='left' backgroundColor='#e9e0d6' />
-                </div>
+        <div className='homepage'>
+            <div id='aboutWrapper'>
+                <About />
             </div>
-            <div className='portfolio'>
-                <div className='curves'>
-                    <CurveV height='30vh' left='80vw' top='285.2vh' thickness='25px' colors={[color1, color2, color3]} />
-                    <CurveBR width='300px' height='25vh' left='calc(80vw - 225px)' top='388.8vh' thickness='25px' radius='50px' colors={[color1, color2, color3]} />
-                    <CurveBL width='100px' height='12.5vh' left='calc(80vw - 325.2px)' top='401.3vh' thickness='25px' radius='50px' colors={[color1, color2, color3]} />
-                    <CurveTR width='calc(80vw - 250.5px)' height='12.5vh' left='0' top='388.8vh' thickness='25px' radius='50px' colors={[color3, color2, color1]} />
-                </div>
-                <div className='content'>
-                    <Typing fontSize='15vw' text='Portfolio.' />
-                    <Section height='75vh' orientation='left' backgroundColor='#f0e8de' title='Key and Deadbolt Assembly' subtitle='SolidWorks Course Project'
-                        text='This SolidWorks assembly was my final course evaluation for an introductory Computer Aided Design course. Over the course of a month I designed parts, assembled them together, and created the appropriate drawings for them including an exploded view. Click to find a download link for the entire project folder.' 
-                    image={ assemblyBOM } />
-                    <Section height='75vh' orientation='right' backgroundColor='transparent' title='Daniels Door Jam' subtitle='3D Printed Doorstop'
-                        text='This project was though up by another student and I to solve a common problem student were having in our dorm hall. We deisgned, manufactured, prototyped, tested, iterated, and gave away copies of this Door Stop to people who wanted one. Click to see a video of the Door Jam in action.' 
-                    image={ doorStopPoster } />
-                    <Section height='75vh' orientation='left' backgroundColor='#f0e8de' title='Easy Paddle' subtitle='Makerspace Project'
-                        text='This project is a gag gift and my first big manufacturing project. Utilizing my High School Makerspace, I designed and built a ping pong paddle completely from scratch. This allowed me to learn how to use various hand tools, manufacturing equipment, machinery, and softwares.' 
-                    image={ easyPaddle } />
-                </div>
+            <div id='portfolioWrapper'>
+                <Portfolio />
             </div>
-            <div className='contact'>
-                <div className='content'>
-                    <Section height='25vh' orientation='left' backgroundColor='#e9e0d6' />
-                    <Typing fontSize='15vw' text='Contact.' />
-                    <Section height='75vh' orientation='left' backgroundColor='#f0e8de' />
-                    <Section height='75vh' orientation='left' backgroundColor='transparent' />
-                    <Footer />
-                </div>
+            <div id='contactWrapper'>
+                <Contact />
             </div>
         </div>
     );

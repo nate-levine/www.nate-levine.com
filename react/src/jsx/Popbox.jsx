@@ -36,7 +36,7 @@ let Popbox = (props) => {
     return(
         <div style={ squareStyle } className='square' ref={squareRef}>
             <div className='text'>
-                <h1>{ props.title }</h1>
+                <h1 style={{ color: props.textColor }}>{ props.title }</h1>
             </div>
         </div>
     );

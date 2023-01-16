@@ -12,10 +12,13 @@ let Section = (props) => {
                         <h1>{props.title}</h1>
                         <h3>{props.subtitle}</h3>
                         <p>{props.text}</p>
+                        <h3 className='link'>
+                            <Link to='/'>{props.link}</Link>
+                        </h3>
                     </div>
                 </Link>
                 <Link to='/'>
-                    <img src={ props.image } />
+                    <img style={{ backgroundColor: props.backgroundColor }} src={ props.image } />
                 </Link>
             </div>
         );
@@ -32,6 +35,9 @@ let Section = (props) => {
                         <h1>{props.title}</h1>
                         <h3>{props.subtitle}</h3>
                         <p>{props.text}</p>
+                        <h3 className='link'>
+                            <Link to='/'>{props.link}</Link>
+                        </h3>
                     </div>
                 </Link>
             </div>

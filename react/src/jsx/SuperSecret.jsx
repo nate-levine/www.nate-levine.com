@@ -18,20 +18,16 @@ let SuperSecret = () => {
     const [color1, setColor1] = useState(Cookies.get('color1'));
     const [color2, setColor2] = useState(Cookies.get('color2'));
     const [color3, setColor3] = useState(Cookies.get('color3'));
-    function hexToRgb(hex) {
-        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-        return result ? {
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16)
-        } : null;
-      }
+
     useEffect(() => {
         let colorPicker1 = new iro.ColorPicker('#picker1', {
-            width: 100,
+            width: (window.innerWidth / 12),
             color: Cookies.get('color1'),
-            borderWidth: 10,
+            borderWidth: (window.innerWidth / 100),
             borderColor: color1,
+            colors: [
+                'rgb(100%, 100%, 100%)',
+            ],
             layout: [
                 {
                     component: iro.ui.Wheel,
@@ -50,10 +46,13 @@ let SuperSecret = () => {
         });
 
         let colorPicker2 = new iro.ColorPicker('#picker2', {
-            width: 100,
+            width: (window.innerWidth / 12),
             color: Cookies.get('color2'),
-            borderWidth: 10,
+            borderWidth: (window.innerWidth / 100),
             borderColor: Cookies.get('color2'),
+            colors: [
+                'rgb(100%, 100%, 100%)',
+            ],
             layout: [
                 {
                     component: iro.ui.Wheel,
@@ -72,10 +71,13 @@ let SuperSecret = () => {
         });
 
         let colorPicker3 = new iro.ColorPicker('#picker3', {
-            width: 100,
+            width: (window.innerWidth / 12),
             color: Cookies.get('color3'),
-            borderWidth: 10,
+            borderWidth: (window.innerWidth / 100),
             borderColor: Cookies.get('color3'),
+            colors: [
+                'rgb(100%, 100%, 100%)',
+            ],
             layout: [
                 {
                     component: iro.ui.Wheel,
@@ -96,29 +98,22 @@ let SuperSecret = () => {
 
     return(
         <div className='supersecret'>
-            <CurveTR width='53vw' height='25vh' left='0' top='35vh' thickness='2vw' radius='4vw' colors={[color3, color2, color1]} />
-            <CurveBR width='7vw' height='8.45vh' left='42vw' top='60vh' thickness='2vw' radius='4vw' colors={[color3]} />
-            <CurveTL width='4vw' height='14vh' left='38vw' top='66.45vh' thickness='2vw' radius='4vw' colors={[color3]} />
-            <CurveV height='21vh' left='49vw' top='60vh' thickness='2vw' radius='4vw' colors={[color2]} />
-            <CurveBL width='7vw' height='10vh' left='51.05vw' top='60vh' thickness='2vw' radius='4vw' colors={[color1]} />
-            <CurveTR width='4vw' height='14vh' left='58.1vw' top='66.45vh' thickness='2vw' radius='4vw' colors={[color1]} />
-            <CurveBL width='4vw' height='10vh' left='38vw' top='101vh' thickness='2vw' radius='4vw' colors={[color3]} />
-            <CurveTR width='6.95vw' height='10vh' left='42vw' top='107.5vh' thickness='2vw' radius='4vw' colors={[color3]} />
-            <CurveV height='16.6vh' left='49vw' top='101vh' thickness='2vw' radius='4vw' colors={[color2]} />
-            <CurveBR width='4vw' height='10vh' left='58vw' top='101vh' thickness='2vw' radius='4vw' colors={[color1]} />
-            <CurveTL width='7vw' height='10vh' left='51.05vw' top='107.5vh' thickness='2vw' radius='4vw' colors={[color1]} />
-            <CurveBL width='20vw' height='67.2vh' left='47vw' top='117vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
-
-            <Header />
-            <Typing fontSize='14.5vw' text='Super Secret.' />
-            <Section orientation='left' backgroundColor='transparent' />
-            <Section orientation='left' backgroundColor='transparent' />
-            <div className='pickers'>
-                <div id='picker3'></div>
-                <div id='picker2'></div>
-                <div id='picker1'></div>
+            <div className='curves'>
+                <CurveTR width='53vw' height='39vh' left='0vw' top='35vh' thickness='2vw' radius='4vw' colors={[color3, color2, color1]} />
+                <CurveBL width='50vw' height='39vh' left='47vw' top='100vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
             </div>
-            <Footer />
+            <div className='content'>
+                <Header />
+                <Typing fontSize='14.5vw' height='28.5vh' text='Super Secret.' />
+                <Section height='104vh'  orientation='left' backgroundColor='transparent' />
+                <div className='pickers'>
+                    <div id='picker3'></div>
+                    <div id='picker2'></div>
+                    <div id='picker1'></div>
+                </div>
+                <Section height='10vh' orientation='left' backgroundColor='#f0e8de' />
+                <Footer />
+            </div>
         </div>
     );
 }

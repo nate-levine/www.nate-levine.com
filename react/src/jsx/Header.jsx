@@ -10,7 +10,7 @@ let Header = () => {
         aboutButton = 
             <button type="button" onClick={() => 
                 window.scroll({
-                    top: (window.innerHeight * 0),
+                    top: document.getElementById('aboutWrapper').offsetTop,
                     behavior: 'smooth'
                 })}>About</button>
     } else {
@@ -19,7 +19,7 @@ let Header = () => {
                 setTimeout(() => {
                     console.log('test')
                     window.scroll({
-                        top: (window.innerHeight * 0),
+                        top: document.getElementById('aboutWrapper').offsetTop,
                     })
                 
                 }, 0)
@@ -29,9 +29,9 @@ let Header = () => {
     let portfolioButton;
     if (location.pathname === '/') {
         portfolioButton = 
-            <button type="button" onClick={() => 
+            <button type="button" onClick={() =>
                 window.scroll({
-                    top: (window.innerHeight * 2.8),
+                    top: document.getElementById('portfolioWrapper').offsetTop,
                     behavior: 'smooth'
                 })}>Portfolio</button>
     } else {
@@ -40,7 +40,7 @@ let Header = () => {
                 setTimeout(() => {
                     console.log('test')
                     window.scroll({
-                        top: (window.innerHeight * 2.8),
+                        top: document.getElementById('portfolioWrapper').offsetTop,
                     })
                 
                 }, 0)
@@ -52,7 +52,7 @@ let Header = () => {
         contactButton = 
             <button type="button" onClick={() => 
                 window.scroll({
-                    top: (window.innerHeight * 5.57),
+                    top: document.getElementById('contactWrapper').offsetTop,
                     behavior: 'smooth'
                 })}>Contact</button>
     } else {
@@ -61,7 +61,7 @@ let Header = () => {
                 setTimeout(() => {
                     console.log('test')
                     window.scroll({
-                        top: (window.innerHeight * 5.57),
+                        top: document.getElementById('contactWrapper').offsetTop,
                     })
                 
                 }, 0)
