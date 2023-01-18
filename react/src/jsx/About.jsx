@@ -24,9 +24,9 @@ let About = () => {
     return(
         <div className='about'>
             <div className='curves'>
+                <CurveTR width='13vw' height='50vh' left='68vw' top='85vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
                 <CurveBL width='45vw' height='25vh' left='55vw' top='104.9vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
                 <CurveTL width='13vw' height='20vh' left='55vw' top='85vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
-                <CurveTR width='13vw' height='34.2vh' left='68vw' top='85vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
                 <CurveV height='30.2vh' left='75vw' top='129.95vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
             </div>
             <div className='content'>

@@ -15,7 +15,7 @@ let CurveTR = (props) => {
             border: 'solid',
             borderColor: `${props.colors[i]} ${props.colors[i]} transparent transparent`,
             borderRadius: `0 calc(${props.radius} + calc(${props.thickness} * ${i + 2})) 0 0`,
-            borderWidth: `${props.thickness} ${props.thickness} 0 0`,
+            borderWidth: `calc(${props.thickness} + 1px) calc(${props.thickness} + 1px) 0 0`,
         }
 
         lines.push(<div style={lineStyle} />);

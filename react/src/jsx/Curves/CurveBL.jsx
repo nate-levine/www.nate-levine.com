@@ -15,7 +15,7 @@ let CurveBL = (props) => {
             border: 'solid',    
             borderColor: `transparent transparent ${props.colors[i]} ${props.colors[i]}`,
             borderRadius: `0 0 0 calc(${props.radius} + calc(${props.thickness} * ${i + 2}))`,
-            borderWidth: `0 0 ${props.thickness} ${props.thickness}`,
+            borderWidth: `0 0 calc(${props.thickness} + 1px) calc(${props.thickness} + 1px)`,
         }
 
         lines.push(<div style={lineStyle} />);

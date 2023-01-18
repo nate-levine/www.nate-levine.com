@@ -8,8 +8,8 @@ let Homepage = () => {
     useEffect(() => {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             setTimeout(() => {
-                alert("It seems that you're viewing this website on a mobile device. Check out this website on a computer for a better viewing experience.");
-            }, 1000);
+                alert("It seems that you're viewing this website on a mobile device. Check out this website on a computer for a better viewing experience, while I work on making this website more mobile friendly!");
+            }, 3000);
         }
     }, []);
 

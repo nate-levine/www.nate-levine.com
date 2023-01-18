@@ -24,7 +24,7 @@ let Portfolio = () => {
             <div className='curves'>
                 <CurveV height='28.5vh' left='75vw' top='170.2vh' thickness='2vw' colors={[color1, color2, color3]} />
                 <CurveBR width='15vw' height='25vh' left='66vw' top='273.7vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
-                <CurveBL width='12vw' height='12.5vh' left='54vw' top='286.2vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
+                <CurveBL width='15vw' height='13.5vh' left='54vw' top='285.2vh' thickness='2vw' radius='4vw' colors={[color1, color2, color3]} />
                 <CurveTR width='60vw' height='12.5vh' left='0vw' top='273.7vh' thickness='2vw' radius='4vw' colors={[color3, color2, color1]} />
             </div>
             <div className='content'>

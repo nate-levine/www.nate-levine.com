@@ -14,7 +14,7 @@ let CurveH = (props) => {
         
             border: 'solid', 
             borderColor: `transparent transparent ${props.colors[i]} transparent`,
-            borderWidth: `0 0 ${props.thickness} 0`,
+            borderWidth: `0 0 calc(${props.thickness} + 1px) 0`,
         }
 
         lines.push(<div style={lineStyle} />);
