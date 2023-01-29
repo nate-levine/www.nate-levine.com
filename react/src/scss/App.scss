@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
 body {
-    font-family: 'Gotham Light', sans-serif;
+    font-family: 'Gotham XLight', sans-serif;
     margin: 0;
     overflow-x: hidden;
     padding: 0;
@@ -30,7 +30,7 @@ body {
             }
 
             button {
-                font-family: 'Gotham Light', sans-serif;
+                font-family: 'Gotham XLight', sans-serif;
                 border: none;
                 background-color: #e9e0d6;
                 color: #000000;
@@ -129,6 +129,81 @@ body {
         }
         100% {
             box-shadow: 0.2vw 0.2vw #aaaaaa; 
+            transform: translate(0vw, 0vw);
+        }
+    }
+}
+
+.sectionMobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    
+    font-size: 3vw;
+
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #000000;
+    }
+
+    .link {
+        transition: 0.25s;
+    }
+
+    .link:hover {
+        transform: scale(1.05);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        padding: 0 25px;
+        text-indent: 4em;
+    }
+
+    img {
+        height: 60vw;
+        box-shadow: 0.6vw 0.6vw #aaaaaa;
+        transform: translate(0vw, 0vw);
+    }
+
+    img:hover {
+        animation: imageHoverMobile 0.25s;
+        box-shadow: 1.2vw 1.2vw #aaaaaa;
+        transform: translate(-0.6vw, -0.6vw);
+    }
+
+    img:not(:hover) {
+        animation: imageHoverOffMobile 0.5s;
+    }
+
+    @keyframes imageHoverMobile {
+        0% {
+            box-shadow: 0.6vw 0.6vw #aaaaaa; 
+            transform: translate(0vw, 0vw);
+        }
+        100% {
+            box-shadow: 1.2vw 1.2vw #aaaaaa;
+            transform: translate(-0.6vw, -0.6vw);
+        }
+    }
+    @keyframes imageHoverOffMobile {
+        0% {
+            box-shadow: 1.2vw 1.2vw #aaaaaa;
+            transform: translate(-0.6vw, -0.6vw);
+        }
+        100% {
+            box-shadow: 0.6vw 0.6vw #aaaaaa; 
             transform: translate(0vw, 0vw);
         }
     }

@@ -21,7 +21,7 @@ let Contact = () => {
             </div>
             <div className='content'>
                 <Section height='10vh' orientation='left' backgroundColor='#e9e0d6' />
-                <Typing fontSize='15vw' height='28.5vh' stopBlink={ true } text='Contact.' />
+                <Typing fontSize='15vw' height='30.5vh' stopBlink={ true } text='Contact.' />
                 <div style={{ position: 'absolute' }}>
                     <a href="mailto:n8levine11@gmail.com">
                         <Typing fontSize='7vw' height='5vh' delay={ 1500 } stopBlink={ true }  text='n8levine11@gmail.com' />

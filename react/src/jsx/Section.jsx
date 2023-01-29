@@ -1,12 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 let Section = (props) => {
+
+    const [isMobile, setIsMobile] = useState(false);
       
-    if (props.orientation == 'left')
+    useEffect(() => {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            setIsMobile(true);
+        }
+    }, []);
+
+    if (isMobile)
     {
         return(
-            <div className='section' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
+            <div className='sectionMobile' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
                 <a href={ props.url }>
                     <div>
                         <h1>{props.title}</h1>
@@ -21,23 +28,44 @@ let Section = (props) => {
             </div>
         );
     }
-    else if (props.orientation == 'right')
+    else if (!isMobile)
     {
-        return(
-            <div className='section' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
-                <a href={ props.url }>
-                    <img src={ props.image } />
-                </a>
-                <a href={ props.url }>
-                    <div>
-                        <h1>{props.title}</h1>
-                        <h3>{props.subtitle}</h3>
-                        <p>{props.text}</p>
-                        <h3 className='link'>{props.link}</h3>
-                    </div>
-                </a>
-            </div>
-        );
+        if (props.orientation == 'left')
+        {
+            return(
+                <div className='section' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
+                    <a href={ props.url }>
+                        <div>
+                            <h1>{props.title}</h1>
+                            <h3>{props.subtitle}</h3>
+                            <p>{props.text}</p>
+                            <h3 className='link'>{props.link}</h3>
+                        </div>
+                    </a>
+                    <a href={ props.url }>
+                        <img style={{ backgroundColor: props.backgroundColor }} src={ props.image } />
+                    </a>
+                </div>
+            );
+        }
+        else if (props.orientation == 'right')
+        {
+            return(
+                <div className='section' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
+                    <a href={ props.url }>
+                        <img src={ props.image } />
+                    </a>
+                    <a href={ props.url }>
+                        <div>
+                            <h1>{props.title}</h1>
+                            <h3>{props.subtitle}</h3>
+                            <p>{props.text}</p>
+                            <h3 className='link'>{props.link}</h3>
+                        </div>
+                    </a>
+                </div>
+            );
+        }
     }
 }
 

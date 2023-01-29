@@ -51,7 +51,7 @@ let About = () => {
                 </div>
                 <div style={{ height:'75vh', backgroundColor: 'transparent' }}>
                     <h3 style={{ position: 'absolute', width: '40vw', left: '10vw', top: '112vh', margin: 0 }}>Although I study mechanical engineering, software engineering is just as interesting.</h3>
-                    <h3 style={{ position: 'absolute', width: '35vw', left: '15vw', top: '125vh', margin: 0 }}>is more than an life skill. Understanding and applying the chemistry behind what makes good food is a constant goal for me.</h3>
+                    <h3 style={{ position: 'absolute', width: '35vw', left: '15vw', top: '125vh', margin: 0 }}>is more than a life skill. Understanding and applying the chemistry behind what makes good food is a constant goal for me.</h3>
                     <h3 style={{ position: 'absolute', width: '40vw', left: '23vw', top: '150vh', margin: 0 }}>Going to the gym, going for a run, or playing pickup basketball is an essential. It keeps me relaxed and focused daily.</h3>
                 </div>
             </div>

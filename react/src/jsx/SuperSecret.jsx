@@ -104,7 +104,7 @@ let SuperSecret = () => {
             </div>
             <div className='content'>
                 <Header />
-                <Typing fontSize='14.5vw' height='28.5vh' text='Super Secret.' />
+                <Typing fontSize='15vw' height='28.5vh' text='Super Secret.' />
                 <Section height='104vh'  orientation='left' backgroundColor='transparent' />
                 <div className='pickers'>
                     <div id='picker3'></div>
