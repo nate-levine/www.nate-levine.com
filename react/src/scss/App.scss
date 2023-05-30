@@ -297,6 +297,9 @@ body {
     25% {
 		transform: scale(1, 0.025);
     }
+    80% {
+		transform: scale(1, 1.1);
+    }
 	100% {
 		transform: scale(1, 1);
 	}
@@ -309,12 +312,12 @@ body {
 
 @keyframes fade-in {
 	0% {
-		color: transparent;
+		opacity: 0;
 	}
     90% {
-		color: transparent;
+		opacity: 0;
 	}
 	100% {
-		color: #000000;
+		opacity: 1;
 	}
 }

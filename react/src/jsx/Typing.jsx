@@ -12,7 +12,7 @@ let Typing = (props) => {
 
         if (index < text.length) {
             index++;
-            let delta = 200 - Math.random() * 100;
+            let delta = 120 - Math.random() * 60;
 
             setTimeout(() => {
                 typeText(text, index);

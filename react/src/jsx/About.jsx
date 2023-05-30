@@ -31,11 +31,11 @@ let About = () => {
             </div>
             <div className='content'>
                 <Header />
-                <Popbox width='60vw' height='10vh' left='1vw' top='36vh' color={[color1]} delay='1s' duration='0.5s' title='pursuing a B.S. in Mechanical Engineering at' /> 
-                <Popbox width='30vw' height='10vh' left='1vw' top='90vh' color={[color2]} delay='2s' duration='0.5s' title='Web Development &' /> 
-                <Popbox width='30vw' height='10vh' left='10vw' top='100vh' color={[color3]} delay='1s' duration='0.5s' title='Graphics Programming' /> 
-                <Popbox width='12vw' height='10vh' left='2vw' top='125vh' color={[color1]} delay='1s' duration='0.5s' title='Cooking' />
-                <Popbox width='11vw' height='10vh' left='11vw' top='145vh' color={['#000000']} textColor='#ffffff' delay='1s' duration='0.5s' title='Fitness' /> 
+                <Popbox width='60vw' height='10vh' left='1vw' top='36vh' color={[color1]} delay='0s' duration='0.5s' title='pursuing a B.S. in Mechanical Engineering.' /> 
+                <Popbox width='30vw' height='10vh' left='1vw' top='90vh' color={[color2]} delay='0s' duration='0.5s' title='Web Development &' /> 
+                <Popbox width='30vw' height='10vh' left='10vw' top='100vh' color={[color3]} delay='0s' duration='0.5s' title='Graphics Programming' />
+                <Popbox width='12vw' height='10vh' left='2vw' top='125vh' color={[color1]} delay='0s' duration='0.5s' title='Cooking' />
+                <Popbox width='11vw' height='10vh' left='11vw' top='145vh' color={['#000000']} textColor='#ffffff' delay='0s' duration='0.5s' title='Fitness' /> 
                 <Typing fontSize='15vw' height='28.5vh' text='Nate Levine.' />
                 <div style={{ position: 'absolute', top: '45vh' }}>
                     <img src={ wpiLOGO } style={{ width: '50vw' }} />

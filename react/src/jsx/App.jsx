@@ -8,9 +8,9 @@ import Cookies from '../../../node_modules/js-cookie'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 
-Cookies.set('color1', '#ffbf1f');
+Cookies.set('color1', '#ffb41f');
 Cookies.set('color2', '#ff9000');
-Cookies.set('color3', '#517ee1');
+Cookies.set('color3', '#4786d8');
 
 export default () => (
   <Router>
