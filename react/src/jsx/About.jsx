@@ -41,7 +41,7 @@ let About = () => {
                     <img src={ wpiLOGO } style={{ width: '50vw' }} />
                 </div>
                 <div style={{ height:'50vh', backgroundColor: '#f0e8de' }}>
-                    <h2 style={{ position: 'absolute', left: '50vw', top: '50vh', margin: 0, backgroundColor: '#000000', color: '#ffffff', padding: '10px' }}>I'm a Sophomore at Worcester Polytechnic Institute.</h2>
+                    <h2 style={{ position: 'absolute', left: '50vw', top: '50vh', margin: 0, backgroundColor: '#000000', color: '#ffffff', padding: '10px' }}>I'm a Junior at Worcester Polytechnic Institute.</h2>
                     <h3 style={{ position: 'absolute', left: '50vw', top: '57vh', margin: 0 }}>My interest in engineering stems from two places:</h3>
                     <ul style={{ position: 'absolute', left: '50vw', top: '62vh', margin: 0 }}>
                         <li>Deconstructing things to see how they work</li>
