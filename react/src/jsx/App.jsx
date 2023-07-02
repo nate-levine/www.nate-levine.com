@@ -10,7 +10,7 @@ import React from 'react';
 
 Cookies.set('color1', '#ffb41f');
 Cookies.set('color2', '#ff9000');
-Cookies.set('color3', '#4786d8');
+Cookies.set('color3', '#ee524c');
 
 export default () => (
   <Router>
