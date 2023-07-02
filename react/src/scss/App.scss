@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Gotham_XLight';
-    src: url("C:/Dev/www.nate-levine.com/react/src/fonts/Gotham XLight Regular/Gotham XLight Regular.otf") format("opentype");
+    src: url("../../src/fonts/Gotham XLight Regular/Gotham XLight Regular.otf") format("opentype");
 }
 
 body {
@@ -8,7 +8,12 @@ body {
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    background-color: #fbf2ef;
+    background-color: #ffffff;
+    
+    background-image: url("../../src/media/newspaper material.jpg");
+    background-blend-mode: multiply;
+    background-size: 100vw;
+    background-repeat: repeat;
 }
 
 .header {
@@ -16,6 +21,11 @@ body {
 
     ul {
         background-color: #e9e0d6;
+    
+        background-image: url("../../src/media/newspaper material.jpg");
+        background-blend-mode: multiply;
+        background-size: 100vw;
+        background-repeat: repeat;
         list-style-type: none;
         margin: 0;
         overflow: hidden;
@@ -36,6 +46,11 @@ body {
                 font-family: 'Gotham XLight', sans-serif;
                 border: none;
                 background-color: #e9e0d6;
+    
+                background-image: url("../../src/media/newspaper material.jpg");
+                background-blend-mode: multiply;
+                background-size: 100vw;
+                background-repeat: repeat;
                 color: #000000;
                 cursor: pointer;
                 display: block;
@@ -64,10 +79,25 @@ body {
     }
 }
 
+.content {
+
+    .section {
+        background-blend-mode: multiply;
+        background-image: url("../../src/media/newspaper material.jpg");
+        background-size: 100vw;
+        background-repeat: repeat;
+    }
+}
+
 .section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    
+    background-image: url("../../src/media/newspaper material.jpg");
+    background-blend-mode: multiply;
+    background-size: 100vw;
+    background-repeat: repeat;
 
     a {
         color: #000000;
@@ -215,6 +245,12 @@ body {
 .footer {
     height: 45vh;
     background-color: #e9e0d6;
+    
+    background-image: url("../../src/media/newspaper material.jpg");
+    background-blend-mode: multiply;
+    background-size: 100vw;
+    background-repeat: repeat;
+    
     margin: 0;
     overflow: hidden;
     padding: 0;

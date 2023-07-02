@@ -40,7 +40,7 @@ let About = () => {
                 <div style={{ position: 'absolute', top: '45vh' }}>
                     <img src={ wpiLOGO } style={{ width: '50vw' }} />
                 </div>
-                <div style={{ height:'50vh', backgroundColor: '#f0e8de' }}>
+                <div className='section' style={{ height:'50vh', backgroundColor: '#f0e8de' }}>
                     <h2 style={{ position: 'absolute', left: '50vw', top: '50vh', margin: 0, backgroundColor: '#000000', color: '#ffffff', padding: '10px' }}>I'm a Junior at Worcester Polytechnic Institute.</h2>
                     <h3 style={{ position: 'absolute', left: '50vw', top: '57vh', margin: 0 }}>My interest in engineering stems from two places:</h3>
                     <ul style={{ position: 'absolute', left: '50vw', top: '62vh', margin: 0 }}>
@@ -49,7 +49,7 @@ let About = () => {
                     </ul>
                     <h3 style={{ position: 'absolute', left: '50vw', top: '69vh', margin: 0 }}>My other main interests are coding, cooking, and fitness.</h3>
                 </div>
-                <div style={{ height:'75vh', backgroundColor: 'transparent' }}>
+                <div className='section' style={{ height:'75vh', backgroundColor: 'transparent' }}>
                     <h3 style={{ position: 'absolute', width: '40vw', left: '10vw', top: '112vh', margin: 0 }}>Although I study mechanical engineering, software engineering is just as interesting.</h3>
                     <h3 style={{ position: 'absolute', width: '35vw', left: '15vw', top: '125vh', margin: 0 }}>is more than a life skill. Understanding and applying the chemistry behind what makes good food is a constant goal for me.</h3>
                     <h3 style={{ position: 'absolute', width: '40vw', left: '23vw', top: '150vh', margin: 0 }}>Going to the gym, going for a run, or playing pickup basketball is an essential. It keeps me relaxed and focused daily.</h3>
