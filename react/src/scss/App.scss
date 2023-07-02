@@ -1,7 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
+@font-face {
+    font-family: 'Gotham_XLight';
+    src: url("C:/Dev/www.nate-levine.com/react/src/fonts/Gotham XLight Regular/Gotham XLight Regular.otf") format("opentype");
+}
 
 body {
-    font-family: 'Gotham XLight', sans-serif;
+    font-family: 'Gotham_XLight';
     margin: 0;
     overflow-x: hidden;
     padding: 0;
