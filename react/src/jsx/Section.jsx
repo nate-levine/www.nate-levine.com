@@ -53,7 +53,7 @@ let Section = (props) => {
             return(
                 <div className='section' style={{ "--rotation":`${props.rotation}deg`, backgroundColor: props.backgroundColor, height: props.height }}>
                     <a href={ props.url }>
-                        <img src={ props.image } />
+                        <img style={{ backgroundColor: props.backgroundColor }} src={ props.image } />
                     </a>
                     <a href={ props.url }>
                         <div>
