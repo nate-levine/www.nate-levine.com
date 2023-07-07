@@ -4,7 +4,7 @@ let Popbox = (props) => {
 
     const squareStyle = {
         position: 'absolute',
-        background: props.color, 
+        background: props.color,
         width: props.width,
         height: props.height,
         left: props.left,
@@ -18,6 +18,8 @@ let Popbox = (props) => {
             entry.target.style.setProperty('animation-delay', props.delay);
             entry.target.style.setProperty('animation-duration', props.duration);
             entry.target.firstChild.classList.add('text-animation');
+            entry.target.firstChild.style.setProperty('animation-delay', props.textDelay);
+            entry.target.firstChild.style.setProperty('animation-duration', props.textDuration);
         }
     }
     const options = {
