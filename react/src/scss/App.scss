@@ -90,6 +90,8 @@ body {
 }
 
 .section {
+    --rotation: 0deg;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -131,14 +133,17 @@ body {
 
     img {
         height: 35vw;
-        box-shadow: 0.2vw 0.2vw #aaaaaa;
+        border-radius: 7px;
+        box-shadow: 0.4vw 0.4vw rgb(0, 0, 0, 0.3);
         transform: translate(0vw, 0vw);
+        transform: rotate(var(--rotation));
     }
 
     img:hover {
         animation: imageHover 0.25s;
-        box-shadow: 0.4vw 0.4vw #aaaaaa;
+        box-shadow: 0.6vw 0.6vw rgb(0, 0, 0, 0.5);
         transform: translate(-0.2vw, -0.2vw);
+        transform: rotate(0deg);
     }
 
     img:not(:hover) {
@@ -147,22 +152,34 @@ body {
 
     @keyframes imageHover {
         0% {
-            box-shadow: 0.2vw 0.2vw #aaaaaa; 
+            box-shadow: 0.4vw 0.4vw rgb(0, 0, 0, 0.3); 
             transform: translate(0vw, 0vw);
+            transform: rotate(var(--rotation));
+        }
+        30% {
+            transform: rotate(var(--rotation));
+        }
+        50% {
+            box-shadow: 0.65vw 0.65vw rgb(0, 0, 0, 0.5);
+            transform: translate(-0.25vw, -0.25vw);
+            transform: rotate(var(--rotation));
         }
         100% {
-            box-shadow: 0.4vw 0.4vw #aaaaaa;
+            box-shadow: 0.6vw 0.6vw rgb(0, 0, 0, 0.5);
             transform: translate(-0.2vw, -0.2vw);
+            transform: rotate(0deg);
         }
     }
     @keyframes imageHoverOff {
         0% {
-            box-shadow: 0.4vw 0.4vw #aaaaaa;
+            box-shadow: 0.6vw 0.6vw rgb(0, 0, 0, 0.5);
             transform: translate(-0.2vw, -0.2vw);
+            transform: rotate(0deg);
         }
         100% {
-            box-shadow: 0.2vw 0.2vw #aaaaaa; 
+            box-shadow: 0.4vw 0.4vw rgb(0, 0, 0, 0.3); 
             transform: translate(0vw, 0vw);
+            transform: rotate(var(--rotation));
         }
     }
 }
@@ -293,6 +310,16 @@ body {
     img {
         filter: brightness(0);
     }
+
+    .wpiLogo {
+        position: absolute;
+        left: 8vw;
+        top: 8vh;
+        border-radius: 7px;
+        box-shadow: 5px 5px 4px 4px rgb(0, 0, 0, 0.3);
+        transform: rotate(-5deg);
+        width: 35vw;
+    }
 }
 
 .contact {
@@ -318,6 +345,7 @@ body {
 }
 
 .square {
+    border-radius: 2px;
     transform: scale(0);
 
     .text {

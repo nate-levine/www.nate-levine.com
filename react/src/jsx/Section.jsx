@@ -33,7 +33,7 @@ let Section = (props) => {
         if (props.orientation == 'left')
         {
             return(
-                <div className='section' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
+                <div className='section' style={{ "--rotation":`${props.rotation}deg`, backgroundColor: props.backgroundColor, height: props.height }}>
                     <a href={ props.url }>
                         <div>
                             <h1>{props.title}</h1>
@@ -51,7 +51,7 @@ let Section = (props) => {
         else if (props.orientation == 'right')
         {
             return(
-                <div className='section' style={{ backgroundColor: props.backgroundColor, height: props.height }}>
+                <div className='section' style={{ "--rotation":`${props.rotation}deg`, backgroundColor: props.backgroundColor, height: props.height }}>
                     <a href={ props.url }>
                         <img src={ props.image } />
                     </a>

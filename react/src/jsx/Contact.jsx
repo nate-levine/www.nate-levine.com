@@ -17,7 +17,7 @@ let Contact = () => {
     return(
         <div className='contact'>
             <div className='curves'>  
-                <CurveH width='100vw' left='0vw' top='475.5vh' thickness='2vw' colors={[color1, color2, color3]} />
+                <CurveH width='99vw' left='0vw' top='560.6vh' thickness='2vw' colors={[color1, color2, color3]} />
             </div>
             <div className='content'>
                 <Section height='10vh' orientation='left' backgroundColor='#e9e0d6' />
