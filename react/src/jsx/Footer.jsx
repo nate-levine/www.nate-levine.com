@@ -24,7 +24,7 @@ let Footer = () => {
                     <p>Links & Downloads</p>
                     <ul>
                         <li><a href='https://www.linkedin.com/in/nate-levine-/'>LinkedIn</a></li>
-                        <li><a href='https://drive.google.com/file/d/1Si3qTOH6mabLxFM67JGLbyOHDfIFjb-Q/view?usp=share_link'>Resume</a></li>
+                        <li><a href='https://drive.google.com/file/d/1rV_y_y514oV3aj6kvZWtXGQJRkhuUjVE/view?usp=sharing'>Resume</a></li>
                     </ul>
                 </div>  
                 <div></div>
